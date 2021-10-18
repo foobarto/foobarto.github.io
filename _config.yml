@@ -15,6 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: World-as-Code
 email: foobarto@gmail.com
+name: Bartosz Ptaszynski
 description: >-
   Declare World as Code
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -22,6 +23,38 @@ domain: foobarto.me
 url: "https://foobarto.me/" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  foobarto
+repository: foobarto/foobarto.github.io
+
+author:
+  name     : "Bartosz Ptaszynski"
+  avatar   : "/assets/images/bio-photo.png"
+  bio      : ""
+  location : "Cork, Ireland"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/foobarto"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/foobarto"
+
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      show_date: true
+      breadcrumbs: true
+      author_profile: true
+      layout: single
 
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
