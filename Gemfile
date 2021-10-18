@@ -39,4 +39,5 @@ gem "kramdown-parser-gfm"
 
 gem "github-pages", "~> 219", group: :jekyll_plugins
 gem "jekyll-include-cache", group: :jekyll_plugins
+gem 'jekyll-archives', group: :jekyll_plugins
 

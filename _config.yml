@@ -24,6 +24,7 @@ url: "https://foobarto.me/" # the base hostname & protocol for your site, e.g. h
 #twitter_username: jekyllrb
 github_username:  foobarto
 repository: foobarto/foobarto.github.io
+breadcrumbs: true
 
 author:
   name     : "Bartosz Ptaszynski"
@@ -56,6 +57,16 @@ defaults:
       author_profile: true
       layout: single
 
+permalink: /:categories/:title/
+
+jekyll-archives:
+  enabled:
+    - categories
+  layouts:
+    category: archive
+  permalinks:
+    category: '/:name/'
+
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
 # Build settings
@@ -64,6 +75,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-archives
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
